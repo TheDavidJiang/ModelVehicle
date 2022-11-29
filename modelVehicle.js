@@ -1,5 +1,5 @@
 class Vehicle {
-    color
+    color = "red"
     numWheels
     terrains
     name
@@ -19,13 +19,14 @@ class Vehicle {
         return this.name
     }
 
-    set changeColor(newColor){
+    set color(newColor){
         this.color = newColor
     }
     
 }
 
 const newVehicle = new Vehicle("red", "4", ["grass"], "totoya")
-console.log(newVehicle)
+console.log(newVehicle.color("green"))
 // newVehicle.changeColor("red")
 // console.log(newVehicle.color)
+
