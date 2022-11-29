@@ -8,15 +8,29 @@ function Vehicle(color, numWheels, terrains, name){
         return `${this.color}`
     }
     this.getNumWheels = function(){
-        return `${this.color}`
+        return `${this.numWheels}`
     }
     this.getTerrains = function(){
-        return `${this.color}`
+        return [this.terrains]
     }
     this.getName = function(){
-        return `${this.color}`
+        return `${this.name}`
+    }
+
+    this.setColor = function(newColor){
+        this.color = newColor
+    }
+    this.setNumWheels = function(newWheels){
+        this.numWheels = newWheels
+    }
+    this.setTerrains = function(newTerrains){
+        this.terrains = newTerrains
+    }
+    this.setName = function(newName){
+        this.name = newName
     }
 }
 
 const vehicle1 = new Vehicle("red", 4, ["grass"], "totoya")
-console.log(vehicle1.getColor())
+vehicle1.setColor("green")
+console.log(vehicle1)
