@@ -6,6 +6,25 @@ const Vehicle = require("./es5modelVehicle")
 class car extends Vehicle{
     brand
     year
+    constructor(numWheels){
+        super(numWheels)
+        this.numWheels = 4
+        this.display = function() {
+            // for (let terrain of this.terrains){
+            //     console.log(terrain)
+            // }
+            console.log(
+    `Color: ${this.color}, 
+Number of Wheels: ${this.numWheels}, 
+Terrains: ${this.terrains}, 
+Name: ${this.name},
+Brand: ${this.brand},
+Year: ${this.year}
+                `)
+    
+    
+        };
+    }
 
     get brand(){
         return this.brand
@@ -27,7 +46,6 @@ class car extends Vehicle{
 const newCar = new car()
 newCar.setColor("black")
 newCar.setName("Model X")
-newCar.setNumWheels(4)
 newCar.setTerrains(["Grass, Dirt, Rocks"])
 newCar.brand = "Tesla"
 newCar.year = "2020"
