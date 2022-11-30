@@ -30,13 +30,13 @@ function Vehicle(color, numWheels, terrains, name){
         this.name = newName
     };
 
-     this.display = function() {
+    this.display = function() {
         console.log(
-            this.name,
-            this.numWheels,
-            this.terrains,
-            this.name)        
-    }
+            `Color: ${this.color}, Number of Wheels: ${this.numWheels}, Terrains: ${this.terrains}, Name: ${this.name}
+            `)
+
+
+    };
 
 }
 
@@ -44,3 +44,5 @@ const vehicle1 = new Vehicle("red", 4, ["grass"], "totoya")
 vehicle1.setColor("green")
 
 vehicle1.display()
+
+exports.Vehicle = Vehicle
