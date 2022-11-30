@@ -28,15 +28,14 @@ function Vehicle(color, numWheels, terrains, name){
     }
     this.setName = function(newName){
         this.name = newName
-    }
+    };
 
-     display() {
-        return (
+     this.display = function() {
+        console.log(
             this.name,
             this.numWheels,
             this.terrains,
-            this.name
-        )
+            this.name)        
     }
 
 }
