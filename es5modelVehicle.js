@@ -29,8 +29,19 @@ function Vehicle(color, numWheels, terrains, name){
     this.setName = function(newName){
         this.name = newName
     }
+
+     display() {
+        return (
+            this.name,
+            this.numWheels,
+            this.terrains,
+            this.name
+        )
+    }
+
 }
 
 const vehicle1 = new Vehicle("red", 4, ["grass"], "totoya")
 vehicle1.setColor("green")
-console.log(vehicle1)
+
+vehicle1.display()
