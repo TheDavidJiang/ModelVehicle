@@ -31,8 +31,14 @@ function Vehicle(color, numWheels, terrains, name){
     };
 
     this.display = function() {
+        // for (let terrain of this.terrains){
+        //     console.log(terrain)
+        // }
         console.log(
-            `Color: ${this.color}, Number of Wheels: ${this.numWheels}, Terrains: ${this.terrains}, Name: ${this.name}
+`Color: ${this.color}, 
+Number of Wheels: ${this.numWheels}, 
+Terrains: ${this.terrains}, 
+Name: ${this.name}
             `)
 
 
@@ -40,9 +46,9 @@ function Vehicle(color, numWheels, terrains, name){
 
 }
 
-const vehicle1 = new Vehicle("red", 4, ["grass"], "totoya")
-vehicle1.setColor("green")
+// const vehicle1 = new Vehicle("red", 4, ["grass"], "totoya")
+// vehicle1.setColor("green")
 
-vehicle1.display()
+// vehicle1.display()
 
-exports.Vehicle = Vehicle
+module.exports = Vehicle
