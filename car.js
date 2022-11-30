@@ -3,7 +3,7 @@ const Vehicle = require("./es5modelVehicle")
 // const Vehicle = require("./modelVehicle")
 
 
-class car extends Vehicle{
+class Car extends Vehicle{
     brand
     year
     constructor(numWheels){
@@ -43,10 +43,12 @@ Year: ${this.year}
 
 }
 
-const newCar = new car()
+const newCar = new Car()
+// using function
 newCar.setColor("black")
 newCar.setName("Model X")
 newCar.setTerrains(["Grass, Dirt, Rocks"])
+//using es6
 newCar.brand = "Tesla"
 newCar.year = "2020"
 // console.log(newCar)
